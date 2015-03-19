@@ -1,3 +1,28 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="nav">
+  <ul class="nav nav-pills">
 
-{{outlet}}
+  </ul>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        <li>{{#link-to 'application'}}route: 'application', url '/'{{/link-to}}</li>
+        <li>{{#link-to 'users'}}route 'users', url '/users'{{/link-to}}</li>
+        <li>{{#link-to 'users.new'}}route: 'users.new', url '/user/new{{/link-to}}</li>
+        </ul>
+
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+
+</div>
+<div class="application wrapper">
+  <h3>application template</h3>
+  {{outlet}}
+</div>
+
